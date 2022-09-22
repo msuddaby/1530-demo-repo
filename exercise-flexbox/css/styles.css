@@ -6,3 +6,41 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.main-content {
+    width: 65%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+.main-content img:first-of-type {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.main-content img:last-of-type {
+    max-width: 48%;
+
+}
+
+.main-content p {
+    width: 48%;
+}
+
+
+aside {
+    width: 33%;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.article-layout {
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
