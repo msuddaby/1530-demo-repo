@@ -53,6 +53,16 @@ main section ul {
     header p a {
         display: inline;
     }
+
+    main {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header {
+        margin: 2rem;
+    }
+
 }
 
 /* Media Query – Maximum Width */
