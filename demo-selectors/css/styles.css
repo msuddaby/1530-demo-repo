@@ -1,0 +1,45 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    padding: 3rem;
+    text-align: center;
+}
+
+div > section:first-of-type {
+    background-color: crimson;
+}
+
+div > section:last-of-type {
+    background-color: steelblue;
+}
+div > section:nth-of-type(2) {
+    background-color: tomato;
+}
+div > section:nth-last-of-type(2) {
+    background-color: lightseagreen;
+}
+div > section:nth-of-type(3) {
+    background-color: khaki;
+}
+div > section:nth-last-of-type(3) {
+    background-color: lightgreen;
+}
+
+section:only-child {
+    background-color: darkslategray;
+    color: white;
+}
+
+div > section:nth-of-type(even) {
+    font-family: wingdings;
+    font-size: 1.5rem;
+}
+
+section:nth-of-type(2n+3) {
+    color: red;
+    border: 5px solid orchid;
+}
