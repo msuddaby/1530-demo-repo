@@ -6,10 +6,19 @@ millennial pink: #C9ADA7;
 palest pink:     #F2E9E4;
 */
 
+:root {
+    --standard-space:     1rem;
+    --dk-navy:          #22223B;
+    --md-navy:           #4A4E69;
+    --mauve:            #9A8C98;
+    --millennialpink:   #C9ADA7;
+    --palestpink:       #F2E9E4;
+}
+
 /* Typography & Universal Styles */
 
 body {
-    color: #22223B;
+    color: var(--dk-navy);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,7 +32,7 @@ ul, li {
 }
 
 a {
-    color: #4A4E69;
+    color: var(--mdnavy);
     text-decoration: none;
 }
 
@@ -31,22 +40,43 @@ a:hover {
     text-decoration: underline;
 }
 
-.wrapper {
+.container {
     max-width: 1280px;
     margin: auto;
+    padding: calc(var(--standard-space) * 3) var(--standard-space);
 }
 
 /* Navigation */
 
 h1, a {
-    color: #F2E9E4;
+    color: var(--palestpink);
+}
+
+header {
+    background-color: var(--md-navy);
+    text-align: center;
+    padding: var(--standard-space);
+    text-transform: uppercase;
 }
 
 /* Hero Banner */
+.banner {
+    background-image: url('../img/bg/outdoor-tall.webp');
+    background-attachment: fixed;
+    height: calc(100vh - 232px);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--palestpink);
+    min-height: 172px;
+    
+}
 
 
 .btn {
-    background-color: #C9ADA7;
+    background-color: var(--millennialpink);
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.25);
     display: inline-block;
@@ -56,13 +86,73 @@ h1, a {
 }
 
 /* Cards */
+.cards div {
+    height: 800px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: var(--standard-space);
 
+}
+
+.cards p {
+    background-color: var(--md-navy);
+    color: var(--palestpink);
+    padding: var(--standard-space);
+}
+
+.flex-container {
+
+}
+
+.cards div:first-of-type {
+
+    background-image: url('../img/cards/exterior-entry.webp');
+}
+
+.cards div:nth-of-type(2) {
+    background-image: url('../img/cards/interior-desk-resized.webp');
+}
+
+.cards div:last-of-type {
+    background-image: url('../img/cards/kitchen-trinkets.webp');
+}
 
 /* Footer Styles */
 
+footer {
+    background-color: var(--mauve);
+    background-image: url('../img/leaf.svg');
+}
+
+.copyright {
+    background-color: var(--dk-navy);
+    color: var(--palestpink);
+    text-align: center;
+    padding: var(--standard-space);
+}
 
 /* Media Queries */
 
 @media screen and (min-width: 800px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
 
+    .banner {
+        background-image: url('../img/bg/outdoor-wide.webp');
+        height: calc(100vh - 136px);
+    }
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cards div {
+        width: calc((100% - (var(--standard-space) * 2)) / 3);
+    }
 }
