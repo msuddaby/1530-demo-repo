@@ -68,3 +68,20 @@ section {
 }
 
 /* Mobile Layout */
+
+@media (min-width: 925.345999433384px) {
+  body {
+    background-image: url('../img/pole-closeup.webp');
+  }
+
+  header ul {
+    display: flex;
+  }
+
+  nav li:first-of-type {
+    flex-grow: 1;
+  }
+  nav li:first-of-type, nav li:last-of-type, nav li:nth-of-type(3) {
+    background-color: unset;
+  }
+}
