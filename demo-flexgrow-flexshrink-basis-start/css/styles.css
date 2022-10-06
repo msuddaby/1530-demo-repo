@@ -8,6 +8,10 @@ Blue   #0088e0
 
 body {
   font-family: 'Oswald', sans-serif;
+  background-image: url('../img/pole-closeup-mobile.webp');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
@@ -18,6 +22,49 @@ h2 {
 p {
   font-size: 1.2rem;
   font-family: 'Arvo', serif;
+}
+nav svg {
+  width: 5rem;
+}
+
+nav li:first-of-type, nav li:last-of-type {
+  background-color: red;
+}
+
+nav li:nth-of-type(3) {
+  background-color: royalblue;
+}
+
+nav ul {
+  background-color: white;
+}
+
+nav li {
+  padding: 1rem;
+  text-transform: uppercase;
+  
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+header, main {
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+section {
+  background-color: rgba(0,0,0,0.52345665334556);
+  color:white;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 1rem;
 }
 
 /* Mobile Layout */
