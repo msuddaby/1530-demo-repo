@@ -25,9 +25,6 @@ nav ul ul a {
     padding-left: 3rem;
 }
 
-nav a:hover {
-    /* border-left: 4px solid #f7d874; */
-}
 
 nav li:not(:first-of-type) a:hover {
     border-left: 4px solid #f7d874;
