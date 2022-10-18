@@ -1,1 +1,50 @@
 /* developer styles go here */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav img {
+    width: 64px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.125rem;
+    padding: 1rem;
+    border-left: 4px solid transparent;
+}
+
+nav ul ul a {
+    padding-left: 3rem;
+}
+
+nav a:hover {
+    /* border-left: 4px solid #f7d874; */
+}
+
+nav li:not(:first-of-type) a:hover {
+    border-left: 4px solid #f7d874;
+}
+
+
+
+
+@media (min-width: 600px) {
+    nav>ul {
+        display:flex;
+    }
+    nav>ul ul {
+        display: none;
+    }
+
+    nav a:hover + ul {
+        display: block;
+    }
+}
