@@ -33,7 +33,10 @@ nav li:not(:first-of-type) a:hover {
     border-left: 4px solid #f7d874;
 }
 
+nav li {
+    position: relative;
 
+}
 
 
 @media (min-width: 600px) {
@@ -46,13 +49,13 @@ nav li:not(:first-of-type) a:hover {
         position: absolute;
     }
 
-    nav li:hover ul {
+    nav li:hover > ul {
         display: block;
     }
 
     nav li {
         flex-grow: 1;
-        
+        text-align: center;
     }
 
     nav a {
@@ -64,8 +67,20 @@ nav li:not(:first-of-type) a:hover {
 
     nav ul ul a {
         padding: 1rem;
+        
     }
 
+    nav ul ul ul {
+        left: 100%;
+        top: 0;
+    }
+
+}
+
+@media (min-width: 750px) {
+    nav a {
+        white-space: no-wrap;
+    }
 }
 
 nav {
@@ -78,6 +93,10 @@ nav ul {
 
 nav ul ul {
     background-color: greenyellow;
+}
+
+nav ul ul ul li {
+    background-color: dodgerblue;
 }
 
 nav li {
