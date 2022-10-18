@@ -39,12 +39,51 @@ nav li:not(:first-of-type) a:hover {
 @media (min-width: 600px) {
     nav>ul {
         display:flex;
+        align-items: center;
     }
-    nav>ul ul {
+    nav ul ul {
         display: none;
+        position: absolute;
     }
 
-    nav a:hover + ul {
+    nav li:hover ul {
         display: block;
     }
+
+    nav li {
+        flex-grow: 1;
+        
+    }
+
+    nav a {
+        border: none;
+    }
+    nav li:not(:first-of-type) a:hover {
+        border: none;
+    }
+
+    nav ul ul a {
+        padding: 1rem;
+    }
+
+}
+
+nav {
+    background-color: aqua;
+}
+
+nav ul {
+    background-color: bisque;
+}
+
+nav ul ul {
+    background-color: greenyellow;
+}
+
+nav li {
+    background-color: crimson;
+}
+
+nav li li {
+    background-color: darkorchid;
 }
