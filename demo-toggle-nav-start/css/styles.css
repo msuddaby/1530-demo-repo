@@ -16,4 +16,65 @@ body {
     justify-content: space-between;
 }
 
+rect {
+    width: 100px;
+    height: 20px;
+}
+
+header {
+    background-color: #003049;
+    color: #fcbf49;
+    position: relative;
+}
+
+header a {
+    color: #fcbf49;
+    text-decoration: none;
+    display: block;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.toggle-btn:hover {
+    cursor: pointer;
+}
+
+.toggle-btn rect {
+    fill: #fcbf49;
+}
+.toggle-btn svg {
+    width: 40px;
+    height: 40px;
+}
+
+nav {
+    text-align: center;
+    position: absolute;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.7s ease-in-out;
+    left: 0;
+    right: 0;
+}
+nav a {
+    padding: .5rem;
+}
+nav a:hover {
+    background-color: #002438;
+}
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    background-color: #002438;
+    margin: 0;
+}
+
+.show-nav {
+    max-height: 100vh;
+}
+
 /* Media Query */
