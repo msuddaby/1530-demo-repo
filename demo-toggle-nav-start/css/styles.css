@@ -69,7 +69,7 @@ nav a:hover {
 nav ul {
     list-style: none;
     padding-left: 0;
-    background-color: #002438;
+    background-color: #003049;
     margin: 0;
 }
 
@@ -77,4 +77,71 @@ nav ul {
     max-height: 100vh;
 }
 
+main .flex-container {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+main {
+    text-align: center;
+    padding: 3rem;
+}
+
+main h2 {
+    border-bottom: 2px solid #F77F00;
+    font-size: 1.7777rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 3.157rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.new {
+    background-color: #FCBF49;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: -10px;
+    right: -8px;
+}
+
+main .flex-container div {
+    position: relative;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 /* Media Query */
+
+@media (min-width: 800px) {
+    .toggle-btn {
+        display: none;
+    }
+
+    nav {
+        position: unset;
+        max-height: unset;
+    }
+
+    header .container {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+    }
+
+}
