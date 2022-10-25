@@ -16,6 +16,10 @@ body {
     justify-content: space-between;
 }
 
+.hide {
+    display: none;
+}
+
 rect {
     width: 100px;
     height: 20px;
@@ -49,6 +53,10 @@ header a {
 .toggle-btn svg {
     width: 40px;
     height: 40px;
+}
+
+div {
+    transition: display 0.7s ease-in-out;
 }
 
 nav {

@@ -13,6 +13,10 @@ nav ul {
     padding-left: 0;
 }
 
+.hide {
+    display: none;
+}
+
 nav a {
     display: block;
     text-decoration: none;
