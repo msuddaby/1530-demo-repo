@@ -23,6 +23,8 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
+
+
 /* Utility Classes */
 
 .flex {
@@ -46,6 +48,18 @@ h1, h2, h3 {
 
 .intro p {
     font-size: 1.2rem;
+}
+
+.button {
+    background-color: var(--black);
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.button a {
+    color: white;
+    text-transform: uppercase;
 }
 
 main .inner-container section {
@@ -73,9 +87,15 @@ footer p:first-of-type {
     padding: 1rem;
 }
 
+header {
+    box-shadow: var(--box-shadow);
+}
+
 
 /* Navigation */
-
+h1 {
+    color: var(--red);
+}
 
 /* Main Content */
 
@@ -96,5 +116,25 @@ footer p:first-of-type {
 
     img {
         border-radius: 5px 0 0 5px;
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+    nav ul div {
+        display: flex;
+        margin-left: 1rem;
+    }
+
+    nav li {
+        margin-left: 1rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--black);
     }
 }
