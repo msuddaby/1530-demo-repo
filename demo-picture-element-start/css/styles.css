@@ -91,6 +91,14 @@ header {
     box-shadow: var(--box-shadow);
 }
 
+header nav {
+    display: none;
+}
+
+header img { 
+    max-width: 32px;
+}
+
 
 /* Navigation */
 h1 {
@@ -116,6 +124,10 @@ h1 {
 
     img {
         border-radius: 5px 0 0 5px;
+    }
+
+    header nav {
+        display: block;
     }
 
     nav ul {
