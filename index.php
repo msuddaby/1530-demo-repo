@@ -3,6 +3,8 @@
 $contents = scandir('.');
 $folders = glob(".", GLOB_ONLYDIR);
 
-printf($folders);
+foreach ($contents as &$item) {
+    echo($item);
+}
 
 ?>
