@@ -14,7 +14,12 @@
 }
 
 .sr-only {
-	
+	position: absolute;
+	left: -10000px;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
 /* Typography */
@@ -26,10 +31,61 @@ body {
 
 /* Header */
 
+header {
+	background-color: var(--blue);
+	padding: 1rem;
+}
+
+.upper-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-toggle {
+	color: var(--white);
+	fill: var(--white);
+}
+
+.upper-header img {
+	width: 200px;
+}
+
 
 
 /* Search Form */
 
+header form {
+	margin-top: 1rem;	
+}
+
+input[type=search] {
+	width: 100%;
+	padding: .5rem;
+	border-radius: 5px;
+	border: none;
+
+}
+
+.magnifying-glass {
+	position: relative;
+
+}
+
+.magnifying-glass svg {
+	
+}
+
+header input[type=submit] {
+	height: 40px;
+	width: 40px;
+	background-color: var(--orange);
+	color: var(--white);
+	border: 0;
+	border-radius: 5px;
+	outline: 0;
+	cursor: pointer;
+}
 
 
 /* Login Form */
