@@ -69,22 +69,33 @@ input[type=search] {
 
 .magnifying-glass {
 	position: relative;
-
+	width: 40px;
 }
 
 .magnifying-glass svg {
-	
+	width: 30px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	fill: var(--grey);
 }
 
 header input[type=submit] {
 	height: 40px;
-	width: 40px;
+	width: 100%;
+
 	background-color: var(--orange);
 	color: var(--white);
 	border: 0;
 	border-radius: 5px;
 	outline: 0;
 	cursor: pointer;
+}
+
+main .container {
+	background-color: var(--white);
+	padding: 2rem 1rem;
+	border-radius: .4rem;
 }
 
 
